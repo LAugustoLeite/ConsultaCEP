@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JSON.js"></script>
+</head>
+<body>
+    
+    <h2>Acessando um Array aleatório com base no índice</h2>
+    <p id="texto"></p>
+
+    <script>
+
+        const meuJSONarray = '["Java", "Csharp", "Python", "JavaScript"]';
+        const meuArrayXjson = JSON.parse(meuJSONarray);
+
+        meuArrayXjson.unshift("HTML", "C++")
+
+        // document.getElementById("texto").innerHTML = meuArrayXjson[Math.floor(Math.random() * 4)]; 
+
+        // delete meuArrayXjson [0]; 
+
+        // document.getElementById("texto").innerHTML = meuArrayXjson[0]; 
+
+        // meuArrayXjson[0] = "PHP"; 
+
+        document.getElementById("texto").innerHTML = meuArrayXjson; 
+
+    </script>
+
+</body>
+</html>
